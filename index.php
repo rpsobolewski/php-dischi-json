@@ -11,20 +11,29 @@
 
 <body>
     <div id='app'>
-        <div class="container">
-            <header>
+        <header>
+            <img class="logo" src="./spotify-logo-transparent-free-png.png" alt="">
+
+        </header>
+
+        <main>
+
+            <div class="container">
 
 
-            </header>
+                <div class="d-flex flex-wrap justify-content-center text-center" v-if="discs">
+                    <div class="col-3 m-3  " v-for="(disc, index) in discs" :key="disc + index">
+                        <img class="poster" :src="disc.poster" alt="">
+                        <h3>{{disc.title}}</h3>
+                        <p>{{disc.author}}</p>
+                        <h3>{{disc.year}}</h3>
 
-
-            <div v-if="discs">
-                <div class="col-3" v-for="(disc, index) in discs" :key="disc + index">
-                    {{disc.title}}
+                    </div>
                 </div>
+
             </div>
 
-        </div>
+        </main>
 
 
 

@@ -1,0 +1,24 @@
+*{
+    color: white;
+}
+
+
+.logo{
+    height: 70px;
+    margin-left: 300px;
+}
+header{
+    background-color:#06131f ;
+}
+main{
+    background-color: #1d2d3c;
+    height: 100vh;
+}
+.poster{
+    width: 170px;
+    aspect-ratio: 1/1;
+}
+.col-3{
+    background-color:#06131f ;
+   
+}
